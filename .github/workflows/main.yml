@@ -32,8 +32,15 @@ jobs:
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
           git clone https://github-actions:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git --branch gh-pages --single-branch gh-pages
+          echo "--- ls dist ---"
+          ls -l dist
+          echo "--- ls gh-pages ---"
+          ls -l gh-pages
           cp -r dist/* gh-pages/
+          echo "--- ls gh-pages after copy ---"
+          ls -l gh-pages
           cd gh-pages
+          git status -s
           if [[ -n $(git status -s) ]]; then
             git add .
             git commit -m "Deploy reports"
