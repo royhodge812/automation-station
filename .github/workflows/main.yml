@@ -34,6 +34,10 @@ jobs:
           git clone https://github-actions:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git --branch gh-pages --single-branch gh-pages
           cp -r dist/* gh-pages/
           cd gh-pages
-          git add .
-          git commit -m "Deploy reports"
-          git push
+          if [[ -n $(git status -s) ]]; then
+            git add .
+            git commit -m "Deploy reports"
+            git push
+          else
+            echo "No changes to commit"
+          fi
