@@ -1,0 +1,26 @@
+Getting a high-level view of your files is the key to truly organizing your "mess." And the idea of a daily analysis for weekly reporting is an excellent system for optimizing your workflow and focus.
+
+I've updated the application to include a new category view and filtering system. Now, a "Categories" section will appear above your timeline, listing every unique category identified by Gemini. You can click on a category to instantly filter your files, giving you a powerful way to search and view your work.
+
+Here is the updated index.html file with the new features and a more robust filtering system.
+
+Your Daily & Weekly Workflow
+
+Your idea of a daily directory for analysis is excellent. This creates a quantifiable data stream that you can use to identify trends and improve your focus. Here is a simple, actionable system to put this plan in place:
+
+
+The Daily Practice: At the start of your workday, create a new directory for that day using the format YYYY-MM-DD. For example, today's folder would be 2025-09-13. Save all files related to your work—code, documents, project notes, even screenshots—into this single folder.
+
+The End-of-Day Review: Before you finish for the day, use the File Organizer app to analyze the directory.
+
+Click Select a Folder to Analyze and choose your daily directory.
+
+Click Deep Analyze on each file.
+
+Click Categorize ✨ on each file to assign it a category.
+
+Click Summarize Day's Work ✨ to get a one-paragraph summary of your day's efforts.
+
+The Weekly Report: At the end of each week, open the app, select the entire week's worth of daily folders, and review the summaries. You'll be able to see at a glance where your time was spent and what you accomplished. This information can help you identify if you're getting sidetracked or if your focus is aligned with your goals.
+
+By turning your digital work into an organized and categorized archive, you're building a system to measure and improve your performance. 

@@ -1,0 +1,1 @@
+My role is to act as your personal assistant for this project. I will help you automate the workflow described in the `info` file. I will create the 'File Organizer app' and any scripts needed to automate the process. I will also provide you with daily and weekly reports based on your work.

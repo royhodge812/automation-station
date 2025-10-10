@@ -1,0 +1,1 @@
+My main goal is to have a system that helps me track my work and improve my focus. I want to automate the process of analyzing my daily work and generating a weekly report.
