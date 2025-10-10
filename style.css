@@ -1,0 +1,96 @@
+/* Pico.css v1.5.10 - https://picocss.com - MIT License */
+:root {
+  --font-family: -apple-system, system-ui, sans-serif;
+  --line-height: 1.5;
+  --font-weight: 400;
+  --font-size: 16px;
+  --border-radius: 0.25rem;
+  --border-width: 1px;
+  --outline-width: 3px;
+  --spacing: 1rem;
+  --typography-spacing-vertical: 1.5rem;
+  --block-spacing-vertical: calc(var(--spacing) * 2);
+  --block-spacing-horizontal: var(--spacing);
+  --grid-spacing-vertical: 0;
+  --grid-spacing-horizontal: var(--spacing);
+  --form-element-spacing-vertical: 0.75rem;
+  --form-element-spacing-horizontal: 1rem;
+  --nav-element-spacing-vertical: 1rem;
+  --nav-element-spacing-horizontal: 0.5rem;
+  --nav-link-spacing-vertical: 0.5rem;
+  --nav-link-spacing-horizontal: 0.5rem;
+  --form-label-font-weight: var(--font-weight);
+  --form-label-margin-bottom: 0.5rem;
+  --form-element-padding: var(--form-element-spacing-vertical) var(--form-element-spacing-horizontal);
+  --form-element-border-color: #546e7a;
+  --form-element-active-border-color: var(--primary);
+  --form-element-focus-color: var(--primary-focus);
+  --form-element-background-color: #212121;
+  --form-element-placeholder-color: #90a4ae;
+  --switch-background-color: #546e7a;
+  --switch-color: var(--primary-inverse);
+  --switch-checked-background-color: var(--primary);
+  --range-border-color: #546e7a;
+  --range-active-border-color: var(--primary);
+  --range-thumb-border-color: var(--primary-inverse);
+  --range-thumb-color: var(--primary);
+  --range-thumb-hover-color: var(--primary-hover);
+  --range-thumb-active-color: var(--primary-focus);
+  --table-border-color: #546e7a;
+  --table-row-stripped-background-color: rgba(119, 146, 160, 0.05);
+  --code-background-color: #212121;
+  --code-color: #b0bec5;
+  --code-padding: 0.25rem 0.5rem;
+  --code-font-family: "monospace";
+  --code-font-size: 0.875em;
+  --code-font-weight: var(--font-weight);
+  --code-border-radius: var(--border-radius);
+  --code-border: var(--border-width) solid var(--form-element-border-color);
+  --code-inline-padding: var(--code-padding);
+  --code-inline-font-size: var(--code-font-size);
+  --code-inline-font-weight: var(--code-font-weight);
+  --code-inline-border-radius: var(--code-border-radius);
+  --code-inline-border: var(--code-border);
+  --primary: #009688;
+  --primary-hover: #00796b;
+  --primary-focus: rgba(0, 150, 136, 0.25);
+  --primary-inverse: #fff;
+  --secondary: #546e7a;
+  --secondary-hover: #455a64;
+  --secondary-focus: rgba(84, 110, 122, 0.25);
+  --secondary-inverse: #fff;
+  --contrast: #eceff1;
+  --contrast-hover: #fff;
+  --contrast-focus: rgba(84, 110, 122, 0.25);
+  --contrast-inverse: #212121;
+  --background-color: #121212;
+  --color: #eceff1;
+  --h1-color: #eceff1;
+  --h2-color: #eceff1;
+  --h3-color: #eceff1;
+  --h4-color: #eceff1;
+  --h5-color: #eceff1;
+  --h6-color: #eceff1;
+  --muted-color: #90a4ae;
+  --muted-border-color: #37474f;
+  --card-background-color: #1e1e1e;
+  --card-border-color: #37474f;
+  --card-box-shadow: 0 0.125rem 1rem rgba(0, 0, 0, 0.06), 0 0.125rem 2rem rgba(0, 0, 0, 0.12), 0 0 0 1px rgba(0, 0, 0, 0.04);
+  --card-sectioning-background-color: #2c2c2c;
+}
+
+body {
+  font-family: var(--font-family);
+  line-height: var(--line-height);
+  font-weight: var(--font-weight);
+  font-size: var(--font-size);
+  color: var(--color);
+  background-color: var(--background-color);
+  margin: 0;
+  padding: var(--spacing);
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+}
