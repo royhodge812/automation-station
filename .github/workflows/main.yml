@@ -28,13 +28,12 @@ jobs:
         run: ls -R dist
 
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
-
-      - name: Upload artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: dist-folder
-          path: dist
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git clone https://github-actions:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git --branch gh-pages --single-branch gh-pages
+          cp -r dist/* gh-pages/
+          cd gh-pages
+          git add .
+          git commit -m "Deploy reports"
+          git push
