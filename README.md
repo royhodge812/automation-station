@@ -1,4 +1,6 @@
 # Automation Station
+[![pages-build-deployment](https://github.com/royhodge812/automation-station/actions/workflows/pages/pages-build-deployment/badge.svg?branch=main)](https://github.com/royhodge812/automation-station/actions/workflows/pages/pages-build-deployment)
+
 
 This project is an automated work-tracking system that analyzes your daily work and generates insightful reports. It's designed to help you track your progress, improve your focus, and achieve your goals.
 
