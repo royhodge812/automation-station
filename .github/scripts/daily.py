@@ -16,8 +16,13 @@ def main():
 
     # Update index.html
     index_path = os.path.join(REPORTS_DIR, 'index.html')
-    with open(index_path, 'a') as f:
-        f.write(f'<p><a href="{today}.md">{today}</a></p>\n')
+    reports = sorted([f for f in os.listdir(REPORTS_DIR) if f.endswith('.md')], reverse=True)
+
+    with open(index_path, 'w') as f:
+        f.write('<!DOCTYPE html>\n<html>\n<head>\n  <title>Reports</title>\n</head>\n<body>\n  <h1>Reports</h1>\n')
+        for report in reports:
+            f.write(f'  <p><a href="{report}">{report.replace(".md", "")}</a></p>\n')
+        f.write('</body>\n</html>\n')
 
 if __name__ == '__main__':
     main()
