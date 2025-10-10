@@ -35,7 +35,7 @@ jobs:
           cp -r dist/* gh-pages/
           cd gh-pages
           git add .
-          if ! git diff-index --quiet HEAD; then
+          if ! git diff --cached --exit-code; then
             git commit -m "Deploy reports"
             git push
           else
